@@ -1,0 +1,113 @@
+Day 1: Java Introduction
+----------------------------------------------------------------------------------------
+
+    is a high level strictly but partially object oriented progrmming.
+
+    + Strictly object oriented, as there is no way possible to implement any java application 
+      without using OOP.,
+    + Partially object oriented, as java supports native variables and native types which are
+      not objects and classes
+
+    Histroy And Evolution
+    ----------------------------------------
+    JDK Alpha and Beta (1995)
+    JDK 1.0 (23rd Jan 1996)
+    JDK 1.1 (19th Feb 1997)
+    J2SE 1.2 (8th Dec 1998)                             Stable  
+    J2SE 1.3 (8th May 2000)
+    J2SE 1.4 (6th Feb 2002)                             Stable and Prominent
+    J2SE 5.0 (30th Sep 2004)                            Stable, Prominent and Revolutionary
+    Java SE 6 (11th Dec 2006)
+    Java SE 7 (28th July 2011)
+    Java SE 8 (18th Mar 2014)   (LTS)                   Stable and Most used on current day 
+    Java SE 9 (21st Sep 2017)
+    Java SE 10 (20th Mar 2018)
+    Java SE 11 (Sep 2018)       (LTS)                   Stable and being adopted 
+    Java SE 12 (Mar 2019)
+    Java SE 13 (Sep 2019)
+    Java SE 14 (Mar 2020)
+    Java SE 15 (Sep 2020)
+    
+    Java Distributions
+        JRE                 Java Runtime Environment         
+                                {Java Libraries,GC,JVM,Interpreter,ClassLoader,ByteCodeVerifeir,...}
+        
+        JDK / JSDK          Java (Standard) Development Kit    
+                                {JRE, Development Tools, IDE Support}
+    
+    Java Editions
+
+        Java Standard Edition 
+        ==================================
+                Core Language                
+                Java Core Libraries
+                -------------------------
+                    java.lang               Exceptions, Multi-Threading
+                    java.time               Dae and Time API
+                    java.util               Generics and Collections
+                    java.util.stream        Streams API and Lambda Expressions
+                    java.util.regex         Regular Expressions
+                    java.io                 IO Streams
+                    java.nio                New IO Streams
+                    java.sql                JDBC
+
+        Java Enterprise Edition
+        ==================================
+            App                 Specificaions            Implementations         Frameworks
+            ----                -----------------------  ----------------        -------------
+            Dynamic Web Apps    Servlets and JSP         WebServers like Tomcat  Struts
+                                                                                  Spring
+
+            ORM                 JPA, JTA                 Hibernate,TopLink,EclipseLink...
+                    
+            WebServices         JAX-WS, JAX-RS           Axis2,Apache CXF
+                                          
+            Microservices ...and more
+
+        Java Micro Edition
+        ==================================
+
+                supports smart device / smart card based application development.
+
+
+    Characteristics
+    ----------------------------------------
+
+    1: Each statement shall be terminated by a ;
+
+        System.out.println("");
+
+        Stream<String> = Stream.of(
+                            "a","b","c","d","e","f","g"
+                         );
+
+    2: Strictly Case Sensitive
+
+    3: Each block of statements shall be enclosed wihtin  { .... }
+
+            static {
+                System.out.println("");
+
+                Stream<String> = Stream.of(
+                                    "a","b","c","d","e","f","g"
+                                );        
+            }
+
+    4: Object Oriented
+
+    Features
+    ------------------------------------------
+    Simple
+    Robust
+    Multi-Threaded
+    Distributed
+    Self-Documented
+    Platform Independent
+    Archetecture Neutral
+
+Day2
+----------------------------------------------------------------------------------------
+    
+    Tokens
+    
+    Coding Standards And Conventions
