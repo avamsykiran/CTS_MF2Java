@@ -43,7 +43,7 @@ Day 1: Java Introduction
                 Java Core Libraries
                 -------------------------
                     java.lang               Exceptions, Multi-Threading
-                    java.time               Dae and Time API
+                    java.time               Date and Time API
                     java.util               Generics and Collections
                     java.util.stream        Streams API and Lambda Expressions
                     java.util.regex         Regular Expressions
@@ -109,5 +109,175 @@ Day2
 ----------------------------------------------------------------------------------------
     
     Tokens
-    
+    -----------------------------
+        
+        Keywords                    lower cased
+
+        Operators
+
+                        Binary Operators
+
+                                Arithmetic
+                                        +       Addition            sum
+                                        -       Substraction        diff
+                                        *       Multiplication      prod
+                                        /       Division            Quitiont
+
+                                            7/2     3
+                                            7/2.0   3.5
+                                            7.0/2.0 3.5
+                                            7.0/2.0 3.5
+
+                                        %       Division-Modulo     Reminder
+
+                                Assignemnt
+
+                                    =
+                                                a =5;
+                                                a = c+b;
+                                                a = Math.min(45,657);
+
+                                    +=,-=,/=,*=,%=
+
+                                    a+=5;           a = a+5;
+
+                                Relational
+
+                                        ==, < , >, <=, >=, != 
+
+                                Logical
+
+                                        and     &&
+                                        or      ||
+                                        not     !
+
+                                        boolean flag = a>b && b>c;
+                                        boolean flag = a>b || b>c;
+                                        boolean flag1 = !flag2;
+
+                        Unary Operators
+                                    -       unary minus
+
+                                    a = v1-v2; //bianry -
+                                    a = -b; //unarity - 
+
+                                    ++      increment
+                                    --      decrement
+
+                                    int v1=78;
+                                    int v2 = ++v1;                                   
+
+                        Ternary Pair Operator     
+
+                            rel_or_logical_expression ? expression_on_true : expression_on_false
+
+                            int b=-109,c=0;
+                            int a = b>=c?b:c;
+
+                            value of a is 0.
+
+                            if(b>=c){
+                                a=b;
+                            }else{
+                                a=c;
+                            }
+
+                        Bitwise Operators
+
+                                &       
+                                |       
+                                ^
+                                <<
+                                >>
+
+                        Misc
+
+                                instance of
+                                ()                  function calls, type casting
+                                []                  arrays 
+                                {}                  block of code
+                                                    initilizations
+                                ;                   statement termination
+                                <>                  type inferences
+                                ::                  scope resolution
+                                .                   memebership operator
+
+        Comments
+
+                    End of line comment
+                    //
+
+                    Block Comments
+                    /*
+
+                    */
+
+                    /*
+                     This class represents the detials of an Employee
+                     .......................
+                    */
+                    class Employee{
+
+                        private int empNumber;      //represents the employee identitiy
+                        private String empName;     //represents employee full name
+                        private double basic;       //represents employee basic pay
+                        
+                    }
+
+        Identifiers             (Nouns)
+
+                is any name given to a resource like variable,method,class,interfae ..etc
+
+                1. Identifiers can be alpha numeric but can not start with a number
+                        int a1,a2; //valid
+                        int 1a;//invlaid
+
+                2. Identifiers cna not compose of any symbole expect _ .
+
+                        int MIN_COUNT;
+
+                3. Identifiers can not fully match with a keyword
+
+                        int intValue; //valid
+                        int if; //invalid
+
+                Naming Conventions
+                ===================================
+
+
+                1. variable, Objects and Method Identifiers
+
+                    start with lowercase and follow initial capitals 
+                    from the second word onwards
+
+
+                    length
+                    roomLength
+
+                    emp
+                    empToBeDelted
+
+                    compare()
+                    compareTo()
+                    equals()
+                    equalsIgnoreCase()
+
+                2. User Defiend Data Type (class/interface/enum) Identifiers
+
+                    Always follow initial capitals.
+
+                    Employee
+                    Exception
+                    ArrayIndexOutOfBoundsException
+
+                3. Identifiers given to Constants
+
+                    All capitals and word are linked with a _ .
+
+                    MIN_LIMIT
+                    MAX_LIMIT
+                    PI
+
+        Literals
+
     Coding Standards And Conventions
