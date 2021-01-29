@@ -108,8 +108,8 @@ Day 1: Java Introduction
 Day2
 ----------------------------------------------------------------------------------------
     
-    Tokens
-    -----------------------------
+    Tokens and Coding Standards And Conventions
+    ----------------------------------------------------------
         
         Keywords                    lower cased
 
@@ -278,6 +278,113 @@ Day2
                     MAX_LIMIT
                     PI
 
-        Literals
+Day 3:
+----------------------------------------------------------------------------------------------
 
-    Coding Standards And Conventions
+        Literals
+        -----------------------------------------------
+
+            int c = 2*PI*radius;
+
+            keyword             int
+            identifiers         radius,PI,c
+            operators           = * ;
+            comments
+            Literals            2
+
+
+            Numeric
+                        Integer
+
+                            Decimal Numdric System      0 to 9
+
+                                    int x = 72;
+                                    System.out.println(x);      72
+
+                            HexaDecimal Numberic System 0 to 9 ,A to F
+
+                                    int x = 0xFF9;
+                                    System.out.println(x);      4089
+
+                            Octal Numberic System       0 to 7
+
+                                    int x = 072;
+                                    System.out.println(x);      58
+
+                            Binary Numberic System       0 and 1
+
+                                    int x = 0b1101;
+                                    System.out.println(x);      13                                    
+
+                        Floating Pointing
+                                Decimal Numdric System      0 to 9
+
+                                    double d = 89.0;
+                                    float f = 90.0f;
+
+            Non-Numeric
+
+                        Characters
+
+                            char alpha1 = 'a';
+
+                        String
+                            String name=   "MF2Java Batch";
+
+                            System.out.println("Hello Batch");
+
+                        Boolean
+
+                            true
+                            false
+
+                        Reference
+
+                            null
+
+
+        Java Type System
+        --------------------------------------
+
+                Primitive Type
+
+                    char        2B
+
+                    byte        1B
+                    short       2B
+                    int         4B
+                    long        8B
+
+                    double      8B
+                    float       4B
+
+                    void        ----
+                    boolean     1 bit       true and false
+
+                Reference Type / User Defined Data Types
+
+                    class
+                    enum
+                    interface
+
+
+        Developing An application
+        -----------------------------------
+
+            Compose the source code                         TextEditor (notpead...)
+            Compile the source code                         javac Program.java    
+            Test the Source code or the compiled files      -----------
+            Package them                                    jar
+            
+            Build the application (Compiling, linking, 
+            minimizing and package)
+
+            Execute Application                             java 
+            
+            Deploy
+
+            Generate Docuementation                         javadoc
+
+            Read Documentation                              javap
+
+        
