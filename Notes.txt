@@ -388,3 +388,139 @@ Day 3:
             Read Documentation                              javap
 
         
+
+Day 4:
+----------------------------------------------------------------------------
+
+Decison Making Control Statements
+
+    Simple if
+                    if(cond)
+                        statement;
+
+                    if(cond){
+                        statement;
+                    }
+
+    if..else
+                    if(cond){
+                        true block of statements;
+                    }else {
+                        false block of statements;
+                    }
+
+    if laddder
+                    if(cond1){
+                        block1;
+                    }else if(cond2){
+                        block2;
+                    }........................
+                    .....else{
+                        block if non of the statments are true;
+                    }
+
+    nested if
+
+    switch
+
+Iterative Control Statmeents
+
+    do..while
+    while
+    for
+    Enhanced for
+
+Day 5:
+----------------------------------------------------------------------------
+
+    Arrays
+    -----------------------------------------------------
+
+            datatype[] arrName; //declaration
+            datatype arrName[]; //declaration
+            
+            arrName = new datatype[size]; //allocation
+
+            datatype[] arrName = new datatype[size]; //declaration and allocation
+            datatype arrName[] = new datatype[size]; //declaration and allocation
+
+            datatype[] arrName = new datatyoe[]{e1,e2,e3,e4........};
+
+
+            for(loopingVar : array){
+                ...loopingVar...
+            }    
+
+
+            value based allocations
+            reference based allocations
+
+
+            int x=90; //value based allocations
+
+            int arr[];
+
+            arr = new int[3]; //reference based allocation
+
+            int arr2 = arr;
+
+                                Stack                       Heap
+                                                                r1    r2   r3
+                                                                [   ][  ][  ]
+                                    x [ 90 ]
+
+                                    arr [  r1  ]
+                                    arr2[  r1  ]
+
+
+            Develop a java applciation
+                1. to declare an array of 15 elements;
+                2. then initilize that array with elements from 1 to 15.
+                3. then compute and display
+                        a) the smallest
+                        b) the largest
+                        c) sum
+                        d) avg.
+        ===================================================================================
+
+        Object Oriented Programming
+
+                    is  a programming paradigm.
+
+            Class & Object
+            Encapsulation
+            Polymorphisim
+            Inheretence
+            Abastraction                    
+
+
+        Class 
+                is a user defiend datatype; to represent the 
+                real time entities in terms of properties and behaviours.
+                Properties are represetned by variables called fields.
+                behaviours are represented by functions called methods.
+
+
+                class Employee{
+                    //list of Fields and Methods
+                }
+
+        Object    memory allocated (variables) of type class.  
+
+                int n = 105;
+
+                Employee emp1 = new Employee();
+                Employee emp2 = new Employee();
+
+                Employee emp3;
+
+                emp3 = nw Employee();
+
+                Employee[] emps = new Employee[100];
+
+                
+
+
+
+
+
