@@ -502,21 +502,87 @@ Day 5:
 
 
                 class Employee{
-                    //list of Fields and Methods
+                    private int empId;
+                    private String empName;
+
+                    public Employee(int empId,String empName){
+                        this.empid=empid;
+                        this.empNAme=empName;
+                    }
                 }
 
         Object    memory allocated (variables) of type class.  
 
                 int n = 105;
 
-                Employee emp1 = new Employee();
-                Employee emp2 = new Employee();
+                Employee emp1 = new Employee(101,"Vamsy");
+                Employee emp2 = new Employee(101,"Vamsy");
 
                 Employee emp3;
 
-                emp3 = nw Employee();
+                Employee emp3 = emp2;
 
-                Employee[] emps = new Employee[100];
+                boolean flag1 = (emp1==emp2); //false
+                boolean flag2 = (emp3==emp2); //true
+
+                
+        Encapsulation  --- data hiding
+
+
+                Access Specifiers
+                -----------------------
+                    can not use on a local variable 
+                    or a function arguament
+
+                    public              public datatype varaible;
+
+                            on a class      the class is accessable outside its package
+                            on a field      are accessable any where outide the class.
+                            on a method     are accessable any where outide the class.
+                                            
+
+                    private             private datatype varaible;
+                    
+                            on a field      are accessable only from within the class.
+                            on a method     are accessable only from within the class.
+                            
+                    protected           protected datatype varaible;
+
+                            on a field      are accessable from within the class and also sub-classes.
+                            on a method     are accessable from within the class and also sub-classes.
+
+                    default             datatype varaible;
+
+                            default class
+
+                                    classes that are not public are default class.
+                                    and these can not be accessed from outside its package.
+
+                            default field
+                            default method
+
+                                    are accessable from all classes 
+                                    that belong to the same package of the
+                                    owning class.
+
+
+                public class Employee {
+                    
+                    private int empId;
+                    private String fullName;
+                    private double basicPay;
+
+                    public int getEmpId(){
+                        return empId;
+                    }
+
+                    public void setEmpId(int empId){
+                        this.empId=empId;
+                    }
+
+                }
+
+
 
                 
 
