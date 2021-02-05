@@ -7,12 +7,13 @@ public class Employee {
 	private double basic;
 			
 	public Employee() {
-		//default constructor as it has no args
+		System.out.println("Employee constructed");
 	}
 	
 	/* this is a parametrized constructor as it has args.
 	 * */
 	public Employee(int empId, String fullName, double basic) { 
+		this();
 		this.empId = empId;
 		this.fullName = fullName;
 		this.basic = basic;
@@ -20,9 +21,7 @@ public class Employee {
 	
 	//copy constructor
 	public Employee(Employee other) {
-		this.empId=other.empId;
-		this.fullName=other.fullName;
-		this.basic=other.basic;
+		this(other.empId,other.fullName,other.basic);
 	}
 	
 	public int getEmpId() {

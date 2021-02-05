@@ -588,9 +588,239 @@ Day 6:
 Day 7:
 ----------------------------------------------------------------------------
 
+    constructor
 
+            is method that gets invoked immediatly and automatically
+            after the allocation of an object.
 
+            1. a constructor shall be named after its class.
+            2. a constructor shall not return anything even not void.
+
+    default constructors => constructors that do not have any args
+    parametrized constructors => constructors that have args
+    copy constructor => constructor that accepts the object of the same class
+
+    this keyword always refers to an object becasue of which the current method
+    is invoked.
+
+Polymorphisim
+----------------------------------------------------------------------------
                 
+    multiple behaviours of the same action.
+
+    1. Multiply the below
+
+        (a)     23      45
+        (b)     3x+4y   3y+5x
+        (c)     2+i7    4-i8
+        (d)     [1 2]   [1]    
+
+    same action can have multiple behaviours when the parameters change.
+
+    same method can have multiple Implementations when the arguments change.
+
+    type Polymorphisim
+    -----------------------------
+
+        Constructor Overlaoding
+
+            a class having multiple constructors with different arguments.
+
+        Method Overlaoding
+
+            a method of the same class
+            or belonging to super and sub classes
+            has multiple Implementations when the args are different.
+
+            class Human{
+
+                public Energy eat(Apple apple){
+                    wash(apple);
+                    ApplePiece[] pieces=cut(apple);
+                    Energy eng = new Energy();
+                    for(ApplePiece p :pieces){
+                        eng.accumilate(chewAndSwallow(p));
+                    }
+                    return eng;
+                }
+
+                public Energy eat(Cake cake){                    
+                    CakePiece[] pieces=cut(cake);
+                    Energy eng = new Energy();
+                    for(CakePiece p :pieces){
+                        eng.accumilate(chewAndSwallow(p));
+                    }
+                    return eng;
+                }
+
+                public Energy eat(IceCream ice){                                        
+                    Energy eng = new Energy();
+                    while(!ice.complete()){
+                        eng.accumilate(lick(ice));
+                    }
+                    return eng;
+                }
+
+            }
+
+            Human h = new Human();
+            h.eat(new Apple());
+            h.eat(new Cake());
+            h.eat(new IceCream());
+
+        Method Overriding
+
+            if two methods one belonging to the super and the other
+            belonging to the sub class, have the same name, return type and 
+            arguemtns but differ in the implementation, then those ae called overriden
+
+Day 8:
+----------------------------------------------------------------------------
+
+    Inheretence
+
+            class Pen{
+                private Barrel barrel;
+                private Nib nib;
+                private Ink ink;
+
+                //a
+                public Text write(Paper paper){
+                    ..lightly on paper...
+                }
+            }
+
+            class Marker extends Pen{ //marker is like a pen
+
+                //b
+                public Text write(Paper paper){
+                    ..boldly on paper...
+                }
+
+                //c
+                public Text write(WhiteBoard board){
+                    ..boldly on board...
+                }
+
+                //d
+                public Text write(Glass glass){
+                    ..boldly on glass...
+                }
+            }
+
+            //Pen is called super class
+            //Marker is called sub class.
+
+
+            a and b are overriden
+
+            b,c and d are overloaded
+
+
+        Rules of Inheretence
+
+            1. Simple Inheretence
+
+                super <------------- sub
+
+                Rectangle {l,b} <------------ Cubiod {l,b,h}
+
+            2. Multi-Level Inheretence
+
+                super <------ sub1  <-------- sub2 <---- sub3 ........
+
+                Employee {empid,name,basic} <-- Manager {...,allowence} <-- Director {...,share}
+
+            3. Hirarchial Inheretence
+
+                            |<--- sub1
+                super <-----|<--- sub2
+                            |<--- sub3
+
+                            |<--- EducationalLoan
+                Loan  <-----|<--- HosuingLoan
+                            |<--- PersonalLoan
+
+            4. Multiple Inheretence     (is not support by java classes)
+
+                super1<---- |
+                            | <---- Sub
+                super2<---- |
+
+
+                Camera <----- |
+                              |
+                Torch  <----- | <-- SmartPhone
+                              |  
+                Mobile <----- |  
+
+            5. Hybrid Inheretence
+
+                            Employee
+                                |
+                            --------------------
+                            |                   |
+                        ContractEmployee       Manager
+                                                |
+                                               Director 
+
+            use keyword "extends" to derive a class from another.
+
+
+            Constructor Phenomena
+            --------------------------------
+
+            Employee emp = new Employee(); //Employee constructor is invoked.
+
+
+            ContractEmployee cemp = new ContractEmployee(); 
+            //Employee Constructor and ContractEmployee Constructor are called, in that order.
+
+            Director d = new Director();
+            //Employee Constructor, Manager Constructor and then Director Constructor
+
+
+            this and super keyword
+            ------------------------------
+
+            this
+                    represents the current object that invoked the method
+
+                    + use it to refer to fields of current object:
+
+                            this.empId = empId;
+                            this.empId is  the field of the curret employee object,
+                            empId is a local variable or function arg.
+
+                    + use to call one constructor from another.
+
+
+            super
+
+                    represents the super object stub in the sub class.
+
+                    + use to refer to the protected and public fields methods of
+                    super class inside the sub class.
+
+                    + use to call specific super class cosntructor from
+                    sub class constructor.
+
+
+            Assignemnt
+            ------------------------
+
+                    BankAccount
+                     |
+                -----------------------------------------------
+                |                   |                       |
+                SavingsAccount      CurrentAccount         ReocurringDepositAccount
+
+
+
+
+
+
+
 
 
 

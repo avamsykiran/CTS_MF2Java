@@ -15,7 +15,6 @@ public class EmployeeApplication {
 		
 		System.out.println(e1.getEmpId() + "\t" + e1.getFullName()+"\t"+e1.getBasic());
 		
-		
 		Employee e2 = new Employee();
 		e2.setEmpId(102);
 		e2.setFullName("Kiran");
@@ -25,8 +24,7 @@ public class EmployeeApplication {
 		
 		Employee e3 = new Employee(103,"Srinu",528000.0); //object initialization.
 		System.out.println(e3.getEmpId() + "\t" + e3.getFullName()+"\t"+e3.getBasic());
-		
-		
+				
 		Employee e4 = new Employee(e2);
 		
 		//e4=e2; is not goind to create a copy of e2
