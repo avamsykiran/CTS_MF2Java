@@ -816,9 +816,103 @@ Day 8:
                 SavingsAccount      CurrentAccount         ReocurringDepositAccount
 
 
+    NOTE:
+
+        java.lang.Object
+
+                each and every java class
+                is under the hirarchy of Object class.
+
+                class C1{ //java compiler will make C1 extend Object
+                    ...............
+                }
+
+                class C2 extends C1{
+                    ...............
+                }
+        
+                int x=90;
+                System.out.println(x);
+
+                C1 cobj = new C1();
+                System.out.println(cobj);
+
+        java.lang.Object public methods
+        ------------------------------------
+                
+            int hashcode(); //is a unique identity given to each object.
+            
+            boolean equals(Object); 
+
+            String toString(); //prints the classnae and hashcode.
+
+            
+    Type Casting (Primitive)
+    --------------------------------
+
+        converting one type into another....!
 
 
+        implicit type casting
 
+            short y=6;  int x=y;  //implicit type casting
+
+            byto to short, short to int and int to double
+
+        explicit type casting
+
+            double y=3.14;
+            int x=(int)y;
+            short s=(short)x; 
+
+            int code=(int)'A';
+            char ch = (char)81;
+
+    Type Casting (User defiend like classes ...etc)            
+    ---------------------------------------------------
+
+                            Employee
+                                |
+                            --------------------
+                            |                   |
+                        ContractEmployee       Manager
+                                                |
+                                               Director 
+
+    Employee emp = new Employee();              //possible
+
+    Employee emp2 = new ContractEmployee();     //possible
+    Employee emp3 = new Manager();              //possible
+    Employee emp4 = new Director();             //possible
+
+    Manager mgr = new Director();               //possible
+
+    ContractEmployee cemp = new Employee();     //not possible
+    Director = new Manager();                   //not possible
+
+    ContractEmployee cemp2 = nw Manager();      //not possible
+
+
+    ContractEmployee ce4 = (ContractEmployee)emp2;  //possible @ runtime
+    ContractEmployee ce5 = (ContractEmployee)emp3;  //not possible @ runtime
+                                                ClassCastException
+
+    Manager m1 = (Manager)emp4; //possible  
+
+    Abstraction
+    -------------------------------
+            is the process of provding
+            only the requried info and hiding the background implementations.
+
+        Floppy   --Driver--               
+        CD       --Driver--
+        HDD      --Driver-- ReadWrite {Kernel}<-ReadAndWrite-{Shell}<-CopyAndPaste--End User
+        PenDrive --Driver--
+        Camera   --Driver--
+        SSD      --Driver--
+
+
+      
 
 
 

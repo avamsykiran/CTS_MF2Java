@@ -27,5 +27,8 @@ public class Manager extends Employee {
 		this.allowence = allowence;
 	}
 	
-	
+
+	public String toString() {
+		return super.toString() + ",allowence: "+allowence;
+	}
 }

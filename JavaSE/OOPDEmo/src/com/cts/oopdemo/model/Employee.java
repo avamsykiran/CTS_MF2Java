@@ -42,6 +42,12 @@ public class Employee {
 	public void setBasic(double basic) {
 		this.basic = basic;
 	}
+
+	@Override
+	public String toString() {
+		return "empId=" + empId + ", fullName=" + fullName + ", basic=" + basic + "\n";
+	}
 	
+
 	
 }

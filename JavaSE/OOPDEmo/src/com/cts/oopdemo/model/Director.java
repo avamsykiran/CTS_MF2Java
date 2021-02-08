@@ -21,5 +21,8 @@ public class Director extends Manager {
 		this.share = share;
 	}
 	
-	
+
+	public String toString() {
+		return super.toString() + ",share: "+share;
+	}
 }
