@@ -912,9 +912,146 @@ Day 8:
         SSD      --Driver--
 
 
+        Abstract Classes
+
+            is a class for which no object can be allocated.
+            the keyword 'abstract' is used to mark a class as abstract.
+
+            School
+                    Student
+                    Parent
+                    Teacher
+                    NonTeachingStaff
+
+                            abstract class Person
+                                identity
+                                firstName
+                                lastName
+                                dateOfBirth
+                                contactNumber
+                                |
+                    -------------------------------------------
+                    |           |               |           |
+                    Student     Parent         Teacher      NonTeachingStaff
+       
+        Abstract Functions
+
+              are function that has a known signature but no implementation.
+
+              abstract functions can be contained by abstract classes only.
+
+              the sub classes of an abstract class must override
+              all the abstract fucntions in the abstract class, failing
+              which the sub class also must be marked abstract.
+
+                abstract class Shape {
+                    private int[] sides;
+                    private int[] angles;
+
+                    public int periemter(){
+                        int p=0;
+                        for(int s : sides){
+                            p+=s;
+                        }
+                        return p;
+                    }
+
+                    public abstract double getArea();
+                }
+                
+                class Rectangle extends Shape {
+                    public double getArea(){
+                        return sides[0]*sides[1];
+                    }
+                }
+
+        
+        Interface
+
+                is a user defiend that represents a role.
+                An interface can not posses fields but can have 
+                    abstract functions
+                    default functions
+                    static functions
+                    constants.
+
+                All members in a interface are expected to be public.
+
+
+        interface           Abstract Class
+        ------------------------------------------
+        no fields               have fields
+        only public members     any type of members
+        
+        represent Role          represent Entity
+        and one entity can 
+        any number of roles
+
+        one class can           a class can extend in only one super class.
+        implement any number of
+        interfaces meaning supprot 
+        multiple Inheretence
       
+            Animal                                 Bird
+              |                                      |                
+    ---------------------                          ------------------
+    |                   |                           |               |
+    FemaleAnimal        MaleAnimal                  MaleBird        FemaleBird
 
 
+                Mother
+                    feeding()
+                    giveBirth()
+
+                Father
+                    porotection()
+
+                Sister
+
+                Brother
+
+Animal,FemaleAnimal,MaleAnimal,Bird,FemaleBird,MaleBird are entities 
+having both fields and behaviours hence are classes.
+
+Mother,Father,Sister,Brother are roles as they have only unimplementable (abstract)
+behaviours and no fields and are interfaces.
+
+a class can extend only from one super class
+an interface can extend only from on super interface
+a class can implement from more than one interfaces. (multiple inheretence).
+
+deriving interface from a class has no sense hence not possible.
+
+
+Painting Store  ----------- EstimationApp
+
+                                estimate the cost of painting an Hoarding
+                                        area * paintingRatePerUnit
+
+                                estimate the cost of bordering a Hoarding
+                                        perimeter * borderingRatePerUnit
+
+                                the Hoarding are not always rectangle in shape,
+                                they cen be circular or traingular ..etc.,
+
+        Model                           Service                             UI                                
+    representing data            computtational logic                    IO operations
+
+    Hoarding
+        getArea()
+        getPerimeter()
+     |
+     |-CircularHoarding
+     |-RectangleHoarding              class EstiamtionService{
+                                        public double estimateCost(RectangleHoarding rh){
+                                            rh.getArea()*67.8;
+                                        }
+
+                                        public double estimateCost(CircularHoarding ch){
+                                            ch.getArea()*67.8;
+                                        }
+                                    }
+    
 
 
 
