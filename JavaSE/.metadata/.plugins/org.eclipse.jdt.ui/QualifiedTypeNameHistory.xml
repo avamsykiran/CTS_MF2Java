@@ -9,4 +9,8 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.cts.oopdemo.model.Manager"/>
+<fullyQualifiedTypeName name="com.cts.estimationapp.model.Hoarding"/>
+<fullyQualifiedTypeName name="com.cts.estimationapp.service.EstimationService"/>
+<fullyQualifiedTypeName name="com.cts.estimationapp.model.RectangularHoarding"/>
+<fullyQualifiedTypeName name="com.cts.estimationapp.model.CircularHoarding"/>
 </qualifiedTypeNameHistroy>

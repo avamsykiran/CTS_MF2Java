@@ -1036,22 +1036,140 @@ Painting Store  ----------- EstimationApp
 
         Model                           Service                             UI                                
     representing data            computtational logic                    IO operations
+    ----------------------------------------------------------------------------------------
 
-    Hoarding
+    interface Hoarding
         getArea()
         getPerimeter()
      |
      |-CircularHoarding
      |-RectangleHoarding              class EstiamtionService{
-                                        public double estimateCost(RectangleHoarding rh){
-                                            rh.getArea()*67.8;
+                                        public double estimateCost(Hoarding h){
+                                            h.getArea()*67.8;
                                         }
-
-                                        public double estimateCost(CircularHoarding ch){
-                                            ch.getArea()*67.8;
-                                        }
-                                    }
+                                       }
     
+
+    "final" keyword
+    ---------------------------------------------------------
+
+        final local variables
+        final field
+
+                its value is not changable (constants).
+
+        final method
+
+                such methods can not be overriden.
+
+        final class
+
+                such classes can not be inhereted (derived).
+                no sub-classes can be created to final classes.
+
+
+        'final' and 'abstract' are never used together.
+       
+       "static" keyword
+       ------------------------------------------------------------
+            static field
+
+                class Circle{
+                    
+                    private static String orgName; //static fields or class-variables
+                    private static final double PI = 3.14; //static fields or class-variables
+                    private double radius; //non-static-field or instance-variables
+
+                    .......
+                }
+
+                Circle c1 = new Circle();
+                Circle c2 = new Circle();
+                Circle c3 = new Circle();
+
+                each and every object (instacne) of a class is
+                allocated witha seperate copy of non-static fields (instacne-variables)
+
+                only one copy of the static-fields (class-variable) is created 
+                and all objects (instacnes) of the class will use that 
+                same copy.
+
+            static method
+
+                a static method can access only other
+                static members of a class. 
+                (non-static members can not be accessed directly.)
+                
+                static emthods are refered to as class-method
+                non-static emthods are refered to as instacne-method
+
+                if a static method / field is also public
+                then those methods and fields can be accesed 
+                on the class (no need of an object).
+
+                class Circle{
+                    
+                    public static final double PI = 3.14; //static fields or class-variables
+                    private double radius; //non-static-field or instance-variables
+
+                    .......
+
+                    public double getArea(){
+                        return PI*radius*radius;
+                    }
+
+                    public static Circle add(Circle a,Circle b){
+                        //int x = radius + radius; //is meaning less
+                        int x = a.radius+b.radius;
+                    }
+                }
+
+                double x = Circle.PI;
+
+                Circle c1 = new Circle();
+                Circle c2 = new Circle();
+                Circle c3 = Circle.add(c1,c2); //add is nto referenced by an object
+
+                c1.getAraa(); //c1.radius is used by getArea
+                c2.getArea(); //c2.radius is used by getArea              
+
+            static class
+
+                    Not all classes can be static.
+
+                    Java allows us to create a class inside another class
+                    only such inner class can be marked as static, 
+                    adn static inner classes are called nested classes.
+
+                    class Demo{
+                        class InnerClass{
+
+                        }
+
+                        static class NestedClass{
+
+                        }
+                    }
+
+
+            Static Block
+                
+                class Demo{
+                    static {
+                            //called a static block
+                            //a class can have one and only one static block.
+                            //this is executed immediatly 
+                            //when a class is accessed for first time.
+                    }
+                }
+
+                Accessing a class means any one of the below,
+                    1. declare a refernce
+                    2. allocated an object
+                    3. call a static method
+                    4. refer a static field.
+                    5. any of the above on one of its sub-classes.
+
 
 
 
