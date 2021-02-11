@@ -15,6 +15,7 @@ public class EstimatorApp {
 		
 		System.out.println(es.estiamtePaintCost(rh));
 		System.out.println(es.estiamtePaintCost(ch));
+		
 	}
 
 }

@@ -971,8 +971,8 @@ Day 8:
                 is a user defiend that represents a role.
                 An interface can not posses fields but can have 
                     abstract functions
-                    default functions
-                    static functions
+                    default functions  (java 8)
+                    static functions   (java 8)
                     constants.
 
                 All members in a interface are expected to be public.
@@ -1171,7 +1171,120 @@ Painting Store  ----------- EstimationApp
                     5. any of the above on one of its sub-classes.
 
 
+    Day - 12
+    ------------------------------------------------------------------------
 
+        Java 8 enhanceents to an interface.
+
+                default methods
+
+                    unlike method in a interface that are forced to be abstract,
+                    if a method is marked with keyword 'default', then the
+                    default method can have implementation
+
+                static methods        
+
+
+    Java Standard Libraries
+    ------------------------------------------
+
+            fully qualified clas name = package.className
+
+                            java.lang
+        
+        Object                              java.lang.Object
+
+        Wrapper Classes
+                                java.lang.Integer
+                                java.lang.Short
+                                java.lang.Byte
+                                java.lang.Double
+                                java.lang.Boolean
+                                java.lang.Flaot
+                                java.lang.Character
+
+                                class Patient {
+                                        private Integer childCount;
+                                }
+
+                                null//no info is provided      
+                                0//no children
+                                1,2 ...//have children
+
+                                Boxing =
+                                    primitive variable into a wrapper object
+
+                                        int x=89;
+                                        Integer iobj = x; //auto-boxing
+
+                                unBoxing =
+                                    wrapper object into primitive variable
+                                
+                                        Integer iobj = new Integer(109);
+                                        int x = iobj; // auto-unboxing
+
+
+                                String s="10";
+                                int x = Integer.pareInt(s);
+
+
+        System
+                public static fields
+                -------------------------
+                    err         : PrintStream           standard error      stderr
+                    in          : InputStream           standard input      stedin
+                    out         : PrintStream           standard output     stdout
+
+                public static methods
+                ------------------------
+
+                    void exit(int); //abruptly end our application.
+                    void gc(); //garbbage collector
+                    String getEnvironmentVariable(String varName);
+                    void setEnvironmentVariable(String varName,String value);
+
+
+        Strings
+                        java.lang.String
+                        java.lang.StringBuilder
+                        java.lang.StringBuffer
+
+
+                        String s1 = new String();
+                        String s2 = new String("Apple");
+                        String s3 = "Hello World";
+
+                        String objects are immutable (can not be modified).
+                        Java has a separate memory called StringPool to store string.
+
+                        String s3 = "Hello World";
+
+                        Do "Hello World" is ther in the StringPool?
+                            if Yes? s3 will have the ref of "Hello World" assigned
+                            if No? then "Hello World" is created in StringPool, and
+                                    s3 will have the ref of "Hello World" assigned
+
+                        String s4 = "Hello World";
+                        //both s3 an s4 will refer to the smae memory.
+
+                        s3 = "Everyone! " + s3;
+
+                        a new string "Evryone! Hello World" is created in StringPool
+                        and s3 is redirected to refer it.
+
+                        if want a mutable string (a modifiable string),
+                        we will use StringBuffer or StringBuilder
+
+
+        Exception Handling
+        Multi-Threading
+
+        Date and Time API                       java.time        
+        Generics and Collections                java.util
+        Regulat Expressions                     java.regex
+        IOStreams                               java.io
+        Lambadas and Streams API                java.util.stream
+        Java Data Base Connectivity             java.sql
 
 
 

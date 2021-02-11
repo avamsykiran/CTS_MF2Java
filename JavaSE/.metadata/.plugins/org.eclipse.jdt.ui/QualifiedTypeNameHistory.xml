@@ -11,6 +11,6 @@
 <fullyQualifiedTypeName name="com.cts.oopdemo.model.Manager"/>
 <fullyQualifiedTypeName name="com.cts.estimationapp.model.Hoarding"/>
 <fullyQualifiedTypeName name="com.cts.estimationapp.service.EstimationService"/>
-<fullyQualifiedTypeName name="com.cts.estimationapp.model.RectangularHoarding"/>
 <fullyQualifiedTypeName name="com.cts.estimationapp.model.CircularHoarding"/>
+<fullyQualifiedTypeName name="com.cts.estimationapp.model.RectangularHoarding"/>
 </qualifiedTypeNameHistroy>
