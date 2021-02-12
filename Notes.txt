@@ -1275,8 +1275,129 @@ Painting Store  ----------- EstimationApp
                         if want a mutable string (a modifiable string),
                         we will use StringBuffer or StringBuilder
 
+                        java.lang.String
+                        ---------------------------------
+                        public java.lang.String();                        
+                        public java.lang.String(char[]);
+                        public java.lang.String(byte[]);
+                        public java.lang.String(java.lang.StringBuffer);
+                        public java.lang.String(java.lang.StringBuilder);
 
+                        public int length();
+                        public boolean isEmpty();
+                        public char charAt(int);
+                        public byte[] getBytes();
+                        public boolean equals(java.lang.Object);
+                        public boolean equalsIgnoreCase(java.lang.String);
+                        public int compareTo(java.lang.String);
+                        public int compareToIgnoreCase(java.lang.String);                        
+                        public boolean startsWith(java.lang.String);
+                        public boolean endsWith(java.lang.String);
+                        public java.lang.String substring(int);
+                        public java.lang.String substring(int, int);
+                        public java.lang.String concat(java.lang.String);
+                        public java.lang.String replace(char, char);
+                        public boolean matches(java.lang.String);
+                        public java.lang.String[] split(java.lang.String);
+                        public java.lang.String toLowerCase();
+                        public java.lang.String toUpperCase();
+                        public java.lang.String trim();
+
+                        public static java.lang.String format(String, java.lang.Object...);
+                        public static java.lang.String valueOf(..primitive_types...);
+
+
+                        java.lang.StringBuffer
+                        ---------------------------------------------------
+                        public java.lang.StringBuffer();
+                        public java.lang.StringBuffer(java.lang.String);
+  
+                        public synchronized int length();
+                        public synchronized char charAt(int);
+                        public synchronized java.lang.StringBuffer append(java.lang.Object);
+                        public synchronized java.lang.StringBuffer delete(int, int);
+                        public synchronized java.lang.StringBuffer replace(int, int, java.lang.String);
+                        public synchronized java.lang.String substring(int);
+                        public synchronized java.lang.String substring(int, int);           
+                        public synchronized java.lang.StringBuffer insert(int, java.lang.Object);
+                        public synchronized java.lang.StringBuffer reverse();
+  
+                        java.lang.StringBuilder
+                        ---------------------------------------------------
+                        public java.lang.StringBuilder();
+                        public java.lang.StringBuilder(java.lang.String);
+  
+                        public int length();
+                        public char charAt(int);
+                        public java.lang.StringBuilder append(java.lang.Object);
+                        public java.lang.StringBuilder delete(int, int);
+                        public java.lang.StringBuilder replace(int, int, java.lang.String);
+                        public java.lang.String substring(int);
+                        public java.lang.String substring(int, int);           
+                        public java.lang.StringBuilder insert(int, java.lang.Object);
+                        public java.lang.StringBuilder reverse();
+  
         Exception Handling
+        --------------------------------
+
+                Exception object is an object
+                that represents a situation
+                where the application broke down.
+
+                            java.lang.Throwable (i)
+                                    |
+                                    |
+                        ---------------------------------
+                        |                               |
+                        java.lang.Error         java.lang.Exception
+                                                        |
+                                                        |
+                                                java.lang.RuntimeException
+
+
+                UnChecked Exceptions
+
+                            if a method is supposed to raise
+                            an unchecked exception, the compiler will
+                            not force to handle unchecked exceptions
+
+                            all exception classes that are
+                            dereived from RuntimeException class are
+                            identified as UnChecked.
+
+                            we are not forced to handle UnChecked Exceptions
+                            because they can be avoided through
+                            defensive programming.
+
+                            Employee emp;
+                            emp = new Employee();
+                            emp.setName("Lavanya");//NullPointerException is avoided.
+
+                            public void processHike(Employee emp){
+                                if(emp!=null){
+                                    emp.setBasic(emp.getBasic()+10000); //NullPointerException is avoided
+                                }
+                            }
+
+                Checked Exceptions
+                
+                            if a method is supposed to raise
+                            an checked exception, the compiler will
+                            forces to handle checked exceptions
+                                                    
+                            all exception classes that are
+                            dereived from Exception class are
+                            identified as Chekced.
+
+                            download a file, IOException
+                            database connection broken.   SQLException
+
+                            try{
+                               ....the code that may raise an exception     
+                            }catch(Exception exp){
+                                ..do the alternate or display a user understandable message.
+                            }
+
         Multi-Threading
 
         Date and Time API                       java.time        
