@@ -1337,6 +1337,16 @@ Painting Store  ----------- EstimationApp
                         public java.lang.StringBuilder insert(int, java.lang.Object);
                         public java.lang.StringBuilder reverse();
   
+                        Develop a java application for accepting
+                        a para of text.
+                        Analyze and display the below from the given para:
+                            Number of sentences
+                            Number of words.
+                            Number of characters.
+                            Number of alphabets.
+                            Number of digits.
+                            Number of non-alphanumeric characters.
+
         Exception Handling
         --------------------------------
 
@@ -1353,7 +1363,6 @@ Painting Store  ----------- EstimationApp
                                                         |
                                                         |
                                                 java.lang.RuntimeException
-
 
                 UnChecked Exceptions
 
@@ -1397,6 +1406,31 @@ Painting Store  ----------- EstimationApp
                             }catch(Exception exp){
                                 ..do the alternate or display a user understandable message.
                             }
+
+
+        user Defiend Excepitons
+
+            create a checked exception
+              class MyCheckedException extends Exception {
+                  
+                  MyCheckedException(String errMsg){
+                      super(errMsg);
+                  }
+              }
+
+            create an unchecked exception
+              class MyUnCheckedException extends RuntimeException {
+                  
+                  MyUnCheckedException(String errMsg){
+                      super(errMsg);
+                  }
+              }
+
+            "throw" keyword is used to raise an exception
+                throw new MyCheckedException("error message");
+
+            "throws" keyword is used to tranfer the exception
+            from a method to its caller method.
 
         Multi-Threading
 

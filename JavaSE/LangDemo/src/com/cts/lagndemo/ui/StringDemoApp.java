@@ -9,7 +9,7 @@ public class StringDemoApp {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Enter a string: ");
-		String s = scan.next();
+		String s = scan.nextLine();
 		
 		/*
 		 * StringBuilder sb = new StringBuilder();
@@ -26,6 +26,15 @@ public class StringDemoApp {
 			System.out.println("Its a Pallendrome");
 		}else {
 			System.out.println("Its not a Pallendrome");
+		}
+		
+		
+		System.out.println("Enter a sentence: ");
+		String sentence = scan.nextLine();
+		
+		String[] words = sentence.split(" ");
+		for(String word : words) {
+			System.out.println(word);
 		}
 		
 		scan.close();

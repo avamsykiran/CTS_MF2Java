@@ -13,4 +13,9 @@
 <fullyQualifiedTypeName name="com.cts.estimationapp.service.EstimationService"/>
 <fullyQualifiedTypeName name="com.cts.estimationapp.model.CircularHoarding"/>
 <fullyQualifiedTypeName name="com.cts.estimationapp.model.RectangularHoarding"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.cts.ed.model.BankAccount"/>
+<fullyQualifiedTypeName name="com.cts.ed.service.BankAccountService"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.cts.ed.exception.InvalidDepositeAmount"/>
 </qualifiedTypeNameHistroy>
