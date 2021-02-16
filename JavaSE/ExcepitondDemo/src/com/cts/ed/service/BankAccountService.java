@@ -1,9 +1,13 @@
 package com.cts.ed.service;
 
+import com.cts.ed.exception.InsufficientBalanceException;
 import com.cts.ed.exception.InvalidDepositeAmountException;
+import com.cts.ed.exception.InvalidWithdrawAmountException;
 import com.cts.ed.model.BankAccount;
 
 public class BankAccountService {
+	
+	public static final double MIN_BAL=500;
 
 	public double deposite(BankAccount account,double amount) throws InvalidDepositeAmountException{
 		
@@ -15,12 +19,19 @@ public class BankAccountService {
 		return account.getCurrentBal();
 	}
 	
-	public double withdraw(BankAccount account,double amount) {
+	public double withdraw(BankAccount account,double amount) throws InvalidWithdrawAmountException, InsufficientBalanceException {
+						
+		if(amount<=0) {
+			throw new InvalidWithdrawAmountException(amount);
+		}
 		
-		//check if amount is negative, then raise InvalidWithdrawAmountException
-		//check if balance after withdraw is not less than a min bal (say 500), if so raise InsufficientBalanceException. 
+		double currentBal = account.getCurrentBal();
 		
-		account.setCurrentBal(account.getCurrentBal()-amount);
+		if(currentBal-amount<MIN_BAL) {
+			throw new InsufficientBalanceException(amount, currentBal);
+		}
+		
+		account.setCurrentBal(currentBal-amount);
 		
 		return account.getCurrentBal();
 	}

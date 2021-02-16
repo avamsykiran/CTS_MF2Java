@@ -16,6 +16,12 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="com.cts.ed.model.BankAccount"/>
 <fullyQualifiedTypeName name="com.cts.ed.service.BankAccountService"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.cts.ed.exception.InvalidDepositeAmount"/>
+<fullyQualifiedTypeName name="com.cts.ed.exception.InvalidWithdrawAmountException"/>
+<fullyQualifiedTypeName name="com.cts.ed.exception.InsufficientBalanceException"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.time.Period"/>
+<fullyQualifiedTypeName name="java.time.Month"/>
 </qualifiedTypeNameHistroy>

@@ -1430,16 +1430,137 @@ Painting Store  ----------- EstimationApp
                 throw new MyCheckedException("error message");
 
             "throws" keyword is used to tranfer the exception
-            from a method to its caller method.
+            from a method to its caller method. 
 
+Day 15
+----------------------------------------------------------------------------
+
+		try {
+			double updateBal = bService.withdraw(acc, amt);
+			System.out.println(updateBal);
+		} catch (InvalidWithdrawAmountException exp) {
+			System.out.println(exp.getMessage());
+		} catch (InsufficientBalanceException exp) {
+			System.out.println(exp.getMessage());
+		}
+
+        Multi-catch
+        ---------------------------------------------------------------
+		try {
+			double updateBal = bService.withdraw(acc, amt);
+			System.out.println(updateBal);
+		} catch (InvalidWithdrawAmountException | InsufficientBalanceException exp) {
+			System.out.println(exp.getMessage());
+		}
+        
+
+        finally block
+        ------------------------------------
+            a finally block of a try..catch
+            contains code that has to be executed at any cost.
+
+            mostly finally block is used to 
+            close all used resources even if the 
+            mtehod is to termiante. to avoid memory leaks.
+
+        try-with-resources
+        --------------------------
+
+            try(declare closable resourceses here....){
+                    ........................
+            }catch(....){
+
+            }
+
+            the closable resource will be clsoe automatically.
+
+            a Resource has to implement java.lang.Closable interface
+            to be recognized as closable.
+
+        Date and Time API                       
+        ------------------------------------------------------------
+        java.time        
+                    LocalDate
+                    ZonedDate
+                    LocalTime
+                    ZonedTime
+                    LocalDateTime
+                    ZonedDateTime
+
+                                public class (static) methods
+                                        .now()
+                                        .of(year,month,day)
+                                        .of(hour,min,sec)                                                            
+                                        .of(year,month,day,hour,min,sec)  
+                                        .parse(String,dateTimeFormatter)
+
+                                public instance (non-static) methods                  
+                                        .toString()
+                                        .format(dataTimeFormtter)
+                                        .plus....
+                                        .minus...
+
+            DateTimeFormatter                                        
+                                .ofPattern(String pattern);
+
+                                d           day
+                                dd          day with leading zeros
+                                ddd         day in words
+
+                                M           month
+                                MM          month with leading zeros
+                                MMM         Three lettered Month name
+                                MMMM        comple month name
+
+                                yy , yyyy   Year
+
+                                h,hh        hour in 12 hr format
+                                H,HH        hour in 24 hr format
+
+                                mm          min
+
+                                ss          sec
+
+            Duration            timespace between two time instacnes in terms of days,hrs,mins
+            Period              timespace between two date instacnes in terms of days,yrs,months
+
+
+            Assignment:
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+            Develop a java app:
+                1. to accept the loan detials
+                    a) loan amount
+                    b) rate of interest
+                    c) time period in month
+                    d) date of laon disbursment
+
+                2. validate (using excetions) such that
+                    a) amount, rate of interest and time period can not be negtive.
+                    b) date of loan disbursment can not be a future date
+
+                4. display
+                    a) total simple interest
+                    b) date of total repayments
+                    c) amoutn payable
+
+
+
+        Generics and Collections                java.util
+
+        Regular Expressions                     java.regex
+
+        IOStreams                               java.io
+
+        Lambadas and Streams API                java.util.stream
+        
         Multi-Threading
 
-        Date and Time API                       java.time        
-        Generics and Collections                java.util
-        Regulat Expressions                     java.regex
-        IOStreams                               java.io
-        Lambadas and Streams API                java.util.stream
+        Maven
+        
         Java Data Base Connectivity             java.sql
+
+        JUnit
 
 
 
