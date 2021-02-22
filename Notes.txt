@@ -1544,11 +1544,96 @@ Day 15
                     b) date of total repayments
                     c) amoutn payable
 
-
-
         Generics and Collections                java.util
 
-        Regular Expressions                     java.regex
+            ADT - Abstract Data Type - Generic
+
+                swap    e1 and e2
+                        t  = e1;
+                        e1 = e2;
+                        e2 = t;
+
+            java.util
+
+                    Scanner         used for scanning input from a InputStream
+                    Random          used for generating random number.
+
+Collections
+----------------------------------------------------------------------------
+
+    is the java approach to data structures.
+
+    java.util
+
+            ================== DECLARATION (interfaces) ==============================
+
+            Collection                          Map
+                |                                |
+            ---------------                     SortedMap
+            |             |  
+            Set         List
+
+
+            Collection          a non-key-value pair data structure
+
+                                void add(element);
+                                void remove(element);
+                                boolean contains(element);
+                                int size();
+                                boolena isEmpty();
+            
+            Set                 a non-linear data structure
+                                Elements can not be numbered (no index)
+                                Elements can be acceessed only in sequential but not random manner
+                                Elements can not be repeatative.(no duplicates allowed)
+                                One null is allowed
+
+            List                a linear data structure 
+                                Elements can be numbered (has index)
+                                Elements can be acceessed both sequentially and randomly.
+                                Elements can be repeatative.                                
+                                Nulls are allowed.
+
+                                int indexOf(element);
+                                int indexOf(element,int occurence);
+                                void set(element,int);
+                                void add(eleemnt,int);
+                                Element getElementAt(int);
+                                void removeAt(int);
+
+
+            Map                 a key-value pair data structure
+            SortedMap           a key-value pair data structure, sorted on the key
+
+            ================== DECLARATION (classes) ==============================
+
+            the Set interface is implemented by
+
+                    HashSet             order of retrival is indefinite.
+                    TreeSet             order of retrival is sorted by magnitude.
+                    LinkedHashSet       order of retrival is entry order
+
+            the List interface is implemented by                    
+
+                    Vector          uses an array internally
+                                    is synchronized (thread-safe)
+                    ArrayList       uses an array internally
+                                    is not synchronized (not thread-safe)
+                    LinkedList      uses a reference chain of doubly linked list
+                    
+                    Stack           is a list that follows LIFO.
+                    Queue           is a list that follows FIFO.
+
+            ================== ALGORITHM  ==============================
+
+            java.lang.Comparable
+                    int compareTo(Object);
+
+            java.util.Comparator
+                    int compare(Object,Object);
+
+            java.util.Collections
+            java.util.Arrays
 
         IOStreams                               java.io
 
