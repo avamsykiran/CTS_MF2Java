@@ -1601,9 +1601,15 @@ Collections
                                 Element getElementAt(int);
                                 void removeAt(int);
 
-
             Map                 a key-value pair data structure
             SortedMap           a key-value pair data structure, sorted on the key
+
+                                put(key,value);
+                                set(key,value);
+                                get(key);
+                                keySet();
+                                valueSet();
+                                containsKey(key);
 
             ================== DECLARATION (classes) ==============================
 
@@ -1624,6 +1630,14 @@ Collections
                     Stack           is a list that follows LIFO.
                     Queue           is a list that follows FIFO.
 
+
+            Map Implementations
+
+                    HashMap          order of retrival of keys is indefinite.
+                    LinkedHashMap    order of retrival of keys is entry order
+                    TreeMap          order of retrival of keys is sorted order 
+
+
             ================== ALGORITHM  ==============================
 
             java.lang.Comparable
@@ -1634,11 +1648,82 @@ Collections
 
             java.util.Collections
             java.util.Arrays
+        
+            Navigable Collection
+            Concurrent Collection
+
+        Lambadas and Streams API                java.util.stream
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+            Lamdba expression is an inline implementation 
+            for a functionalInterface.
+
+            functionalInterface are interface that have only 
+            one abstract method.
+
+            public class EmpNameComparator implements Comparator<Employee>{
+
+        	    @Override
+	            public int compare(Employee o1, Employee o2) {
+		            return o1.getName().compareTo(o2.getName());
+	            }
+
+            }
+
+            Comparator<Employee> empNameComparator = (o1,o2) -> {
+                    return o1.getName().compareTo(o2.getName());
+            };
+
+            Comparator<Employee> empNameComparator = 
+                (o1,o2) -> o1.getName().compareTo(o2.getName());
+
+            Supplier        no params, but returns
+            Consumer        have params, but doesnt return
+            Predicate       always returns boolean.
+            Functional      has params and also retrun value.
+
+
+            Streams API
+            --------------------------------------------------
+                Stream is a flow data from a data source.
+                data source can be an array or a collection
+
+                java.util.stream.Stream
+
+                        Stream s = Stream.of(array)
+
+                        Stream s2 = list.stream();
+                        Stream s2 = set.stream();
+
+                        void  forEach(Consumer)             Terminal Stream Operator.
+                        Optional<E> reduce(BinaryOperator)  Terminal Stream Operator.
+                        Collection  collect(Collector)      Terminal Stream Operator.
+
+                                                Collectors.toList()
+                                                Collectors.toSet()
+                                                                ...............
+
+                        Stream<E> filter(Predicate)        Intermidate Stream Operator.
+                            
+                        Stream<E> map(transformer)   Intermidate Stream Operator.
+                            
+                            flatMap
+
+
+                    int[] nums = {1,2,3,4,5};
+
+                    Stream.of(nums).reduce((n1,n2) -> n1+n2 ); ((((1+2)+3)+4)+5)
+                    Stream.of(nums).reduce((n1,n2) -> n1>n2?n1:n2 ); 
+
+                    Stream.of(nums).filter((n) -> n%2==0).forEach(System.out::println);
+
+                    Stream.of(nums).map((n) -> n*n).forEach(System.out::println);
+                    
+                    reduce function return an java.util.Optional 
 
         IOStreams                               java.io
 
-        Lambadas and Streams API                java.util.stream
-        
         Multi-Threading
 
         Maven
