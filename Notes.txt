@@ -1710,7 +1710,6 @@ Collections
                             
                             flatMap
 
-
                     int[] nums = {1,2,3,4,5};
 
                     Stream.of(nums).reduce((n1,n2) -> n1+n2 ); ((((1+2)+3)+4)+5)
@@ -1722,7 +1721,52 @@ Collections
                     
                     reduce function return an java.util.Optional 
 
+
+
+                    for loop    vs          Streams         vs    ParallelStreams
+                    -----------------------------------------------------------
+
+                    Outperforms             performs ok           Outperforms 
+                    when the data size                            when the data size is huge  
+                    is low
+
+                    low maintainability     High maintainability    High maintainability
+
+                    low readabilty          High readability        High readability
+
+                    
         IOStreams                               java.io
+
+            Binary Streams
+
+                    read and write data only in the form of bytes
+
+                    InputStream  (System.in)   OutputStream
+                        FileInputStream           FileOutputStream
+                        ObjectInputStream         ObjectOutputStream
+                                                  PrintStream  (System.out)
+                                                        print
+                                                        println      
+
+            Character Streams / Text Streams
+
+                    read and write data only in the form of strings
+
+                    Reader                      Writer
+                        InputStreamReader
+                        BufferedReader              PrintWriter
+                        FileReader                  FileWriter
+
+            File
+            IOException
+
+
+            https://docs.oracle.com/javase/7/docs/api/java/io/package-tree.html
+
+
+
+
+
 
         Multi-Threading
 

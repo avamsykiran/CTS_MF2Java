@@ -1,0 +1,6 @@
+
+This si a test information.
+And this information has to be 
+stored in the text file called
+text.txt
+*stop*
