@@ -1755,17 +1755,62 @@ Collections
                     Reader                      Writer
                         InputStreamReader
                         BufferedReader              PrintWriter
-                        FileReader                  FileWriter
+                        FileReader                  FileWriter                      
 
             File
             IOException
 
-
             https://docs.oracle.com/javase/7/docs/api/java/io/package-tree.html
 
 
+            Write an object into a stream, serialization
+            Read an object from  a stream, deserialization
+
+            For any java object to be serialized or deserialized, the
+            class must implement Serializable
+
+            Serializable is a marker interface,
+            which means it does not any functions in it.
 
 
+        Multi-Layer Archetecture
+        --------------------------------------------------------
+
+        PersistenceUnit <----------> Application <-------------> EndUser
+        (Files/databae)
+
+        PersistenceUnit <--> [ DAO <--> SERVICE <---> UI ] <---> EndUser
+        (Files/databae)
+
+        UI          User interface
+                            1. accept instruction or menu options from EndUser
+                            2. accept the data
+                            3. display the data
+                            4. interact with the service to perform operatons
+
+        Servie      Service Layer 
+                            1. Host bussiness logic
+                                a. validations
+                                b. computations
+                                c. analysis                              
+                            2. interact with DAO to perform persistence
+
+        DAO         Data Access Object / Repository
+                            1. to interact with the unlying
+                                    PersistenceUnit (Files/Database)
+
+        Each layer should compose of an interface and its implementation for
+        each domain. Interface is going to abstract the consuming from
+        the providing. 
+
+
+        Assignemnt to create  CRUd application on
+        Student entity:
+            studentId  int
+            fullName   String
+            admnDate   LocalDate
+            fee        double
+            
 
 
         Multi-Threading
