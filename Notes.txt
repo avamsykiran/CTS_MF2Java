@@ -1796,21 +1796,22 @@ Collections
                             2. interact with DAO to perform persistence
 
         DAO         Data Access Object / Repository
-                            1. to interact with the unlying
+                            1. to interact with the underlying
                                     PersistenceUnit (Files/Database)
 
         Each layer should compose of an interface and its implementation for
         each domain. Interface is going to abstract the consuming from
         the providing. 
 
-
         Assignemnt to create  CRUd application on
         Student entity:
             studentId  int
             fullName   String
             admnDate   LocalDate
-            fee        double
-            
+            fee         double      
+            gstOnFee    double
+            totalFee   double
+
 
 
         Multi-Threading

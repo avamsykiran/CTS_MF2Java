@@ -8,6 +8,9 @@ public class Employee implements Comparable<Employee>,Serializable {
 	private int empId;
 	private String name;
 	private double basic;
+	private double hra;
+	private double ta;
+	private double netpay;
 	private LocalDate hireDate;
 	private boolean usingOfficeCommute;
 	
@@ -63,11 +66,37 @@ public class Employee implements Comparable<Employee>,Serializable {
 	public void setUsingOfficeCommute(boolean usingOfficeCommute) {
 		this.usingOfficeCommute = usingOfficeCommute;
 	}
+	
+	public double getHra() {
+		return hra;
+	}
 
+	public void setHra(double hra) {
+		this.hra = hra;
+	}
+
+	public double getTa() {
+		return ta;
+	}
+
+	public void setTa(double ta) {
+		this.ta = ta;
+	}
+
+	public double getNetpay() {
+		return netpay;
+	}
+
+	public void setNetpay(double netpay) {
+		this.netpay = netpay;
+	}
+
+	
+	
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", name=" + name + ", basic=" + basic + ", hireDate=" + hireDate
-				+ ", usingOfficeCommute=" + usingOfficeCommute + "]";
+		return "Employee [empId=" + empId + ", name=" + name + ", basic=" + basic + ", hra=" + hra + ", ta=" + ta
+				+ ", netpay=" + netpay + ", hireDate=" + hireDate + ", usingOfficeCommute=" + usingOfficeCommute + "]";
 	}
 
 	@Override
@@ -79,7 +108,13 @@ public class Employee implements Comparable<Employee>,Serializable {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + empId;
 		result = prime * result + ((hireDate == null) ? 0 : hireDate.hashCode());
+		temp = Double.doubleToLongBits(hra);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		temp = Double.doubleToLongBits(netpay);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(ta);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + (usingOfficeCommute ? 1231 : 1237);
 		return result;
 	}
@@ -102,10 +137,16 @@ public class Employee implements Comparable<Employee>,Serializable {
 				return false;
 		} else if (!hireDate.equals(other.hireDate))
 			return false;
+		if (Double.doubleToLongBits(hra) != Double.doubleToLongBits(other.hra))
+			return false;
 		if (name == null) {
 			if (other.name != null)
 				return false;
 		} else if (!name.equals(other.name))
+			return false;
+		if (Double.doubleToLongBits(netpay) != Double.doubleToLongBits(other.netpay))
+			return false;
+		if (Double.doubleToLongBits(ta) != Double.doubleToLongBits(other.ta))
 			return false;
 		if (usingOfficeCommute != other.usingOfficeCommute)
 			return false;

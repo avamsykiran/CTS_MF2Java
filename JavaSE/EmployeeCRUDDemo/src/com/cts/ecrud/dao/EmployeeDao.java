@@ -11,4 +11,5 @@ public interface EmployeeDao {
 	Employee add(Employee emp) throws EmployeeProcessingException;
 	Employee modify(Employee emp) throws EmployeeProcessingException;
 	void delete(int id) throws EmployeeProcessingException;
+	boolean existsByEmpId(int id) throws EmployeeProcessingException;
 }

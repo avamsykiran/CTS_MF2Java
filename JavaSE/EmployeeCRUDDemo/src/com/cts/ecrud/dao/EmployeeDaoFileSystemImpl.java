@@ -89,4 +89,9 @@ public class EmployeeDaoFileSystemImpl implements EmployeeDao{
 		writeData();
 	}
 
+	@Override
+	public boolean existsByEmpId(int id) throws EmployeeProcessingException {
+		return emps.containsKey(id);
+	}
+
 }
