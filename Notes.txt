@@ -1803,7 +1803,7 @@ Collections
         each domain. Interface is going to abstract the consuming from
         the providing. 
 
-        Assignemnt to create  CRUd application on
+        Assignemnt to create  CRUD application on
         Student entity:
             studentId  int
             fullName   String
@@ -1812,15 +1812,135 @@ Collections
             gstOnFee    double
             totalFee   double
 
-
-
-        Multi-Threading
-
         Maven
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-
+                is a build tool.
+
+                Ant,Gradle ae a few of that kind.
+
+                App Dev Tasks
+                    1. download and add thrid party libraries (jars)
+                    2. test
+                    3. build
+                    4. package
+
+
+                Build tool automates all thsoe for a developer.
+
+
+                POM
+                ------------------------------
+                    Project Object Model
+
+                    pom has the confguration that maven has to know
+                    to autoamte teh build tasks on our app.
+
+
+                    pom.xml
+                    ----------------------------------------
+
+                        identity(meta-data):
+                                groupId
+                                artifactId
+                                version
+
+                        properties
+                                global maven variables 
+                                use these to hold versions of differetn dependencies
+
+                        dependencies
+                                a list of thrid party libraries
+
+                        build
+                                is a step by step task execution
+                                strategy of a project.
+
+                                plugin is a peice of software that execute a task
+
+                                maven-compiler-plugin           compileing java app
+                                maven-surefire-plugin           exectuing test cases.
         
         Java Data Base Connectivity             java.sql
 
+                Java 8          JDBC 4.0
+
+                JDBC is a specification.
+
+                    a specification is a set of declaration
+                    to notify what are the requried fuctionalitites
+                    for a technology.
+
+                    it si requried that a third party org
+                    should come forward and provide the implementations
+                    for the specification.
+
+
+            DB  <--JDBC--> APP      
+
+
+            Oracle        <----> Thin Driver       <---> JDBC  <---> APP
+            Ms SQL Server <----> Jet Driver        <---> JDBC  <---> APP
+            MySQL         <----> ConnectorJ Driver <---> JDBC  <---> APP
+
+
+            Jdbc Driver Types
+            --------------------------
+                Type1           Jdbc-Odbc Bridge driver
+                Type2           Native JDBC Driver  (c,c++)
+                Type3           Netwrok Adapter Drivers
+                Type4           All Java Drivers
+
+            Jdbc API
+            -----------------------
+                    java.sql
+
+                            DriverManager       class
+
+                            Connection          is a channel of communication
+                                                is used manage the transactions
+
+                            Statement           is used to execute DDL,DML,DRL commands
+                            PreparedStateemnt   is used to execute DDL,DML,DRL commands
+                            CallableStatement   is used to execute a stored proc/fun
+                            ResultSet           is used to hold the data after executing a 'select'
+                            ResultSetMetaData   is used to retrive meta data like
+                                                    no of cols
+                                                    col names
+                                                    col types
+                                                    col label .,..etc
+                                                    of the data held by a ResultSet
+                            DatabaseMetaData    is used to retrive the metadata related to 
+                                                    the current database like
+                                                        database product name
+                                                        database version
+                                                        sql keywords supported by the database ..ect    
+
+                    JDBC Steps
+                    -----------------------------------
+
+                    Step 1: Load Database JDBC driver
+
+                            java.lang.Class.forName("driver fully qualified class name");
+
+                            Class.forName("com.mysql.cj.Driver");
+
+                            this step is no more requried JDBC 4.0,
+                            JDBC 4.0 will auto-detect any drivers in the classpath
+                            and they exist, theya re loaded automatically.
+
+                    Step 2: create a Connection
+
+                            Connection con = DriverManager
+                                    .getConnection(dbUrl,dbUserId,dbPassword);
+
+                                        dbUrl
+                            oracle      jdbc:oracle:thin:@localhost:5421:XE
+                            mysql       jdbc:mysql://localhost:3306/dbName
+                            postgree    jdbc:postgresql://localhost:4321/postgree
+
+                    
+
         JUnit
 
-
+        Multi-Threading
 
