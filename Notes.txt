@@ -1938,9 +1938,41 @@ Collections
                             mysql       jdbc:mysql://localhost:3306/dbName
                             postgree    jdbc:postgresql://localhost:4321/postgree
 
-                    
+                    Step 3:
 
-        JUnit
+                         a) Retrive metadata of database
+
+                                DatabaseMetaData dbmd = con.getMeatData();
+
+                         b) execute DML/DRL queries
+
+                                DRL
+
+                                Statement st = con.createStatement();
+                                ResultSet rs = st.executeQuery("select * from depts");
+                                while(rs.next()){
+                                    rs.get.....(colNumber)
+                                }
+
+                                PreparedStatement pst = con.prepareStatement("select * from depts");
+                                ResultSet rs = pst.executeQuery();
+                                while(rs.next()){
+                                    rs.get.....(colNumber)
+                                }
+
+                                DML
+
+                                Statement               executeUpdate(qry)      int
+                                PreparedStateemnt       executeUpdate()         int
+                                
+                                    
+                         c) execute a procedure or fuction
+
+                                CallabelStatement
 
         Multi-Threading
+        
+        JUnit
+
+        
 

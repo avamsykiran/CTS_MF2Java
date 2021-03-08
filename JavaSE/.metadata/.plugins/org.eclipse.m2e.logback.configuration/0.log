@@ -300,3 +300,109 @@ org.eclipse.core.runtime.CoreException: Launch configuration JdbcTestApp referen
 2021-03-05 12:06:46,586 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-03-05 12:06:46,588 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-03-05 12:06:46,589 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-03-08 10:51:25,648 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-08 11:41:40,377 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:emps-crud-app:2.0 @ F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\pom.xml.
+2021-03-08 11:41:44,078 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:41:44,086 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:41:44,090 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:41:44,092 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:41:44,165 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EmployeeCRUDDemo2/src
+2021-03-08 11:41:44,166 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /EmployeeCRUDDemo2/src/test/java because it overlaps with /EmployeeCRUDDemo2/src
+2021-03-08 11:41:45,798 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-03-08 11:41:47,474 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:emps-crud-app:2.0 @ F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\pom.xml.
+2021-03-08 11:41:49,286 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EmployeeCRUDDemo2/src
+2021-03-08 11:41:49,287 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /EmployeeCRUDDemo2/src/test/java because it overlaps with /EmployeeCRUDDemo2/src
+2021-03-08 11:41:49,589 [Worker-19: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2021-03-08 11:41:50,076 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:41:50,079 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:41:50,084 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:41:50,085 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:42:46,879 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:emps-crud-app:2.0 @ F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\pom.xml.
+2021-03-08 11:42:47,895 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:42:47,896 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:42:47,900 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:42:47,901 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:42:50,161 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:42:50,162 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:42:50,167 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:42:50,172 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:44:55,944 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:44:55,946 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:44:55,949 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:44:55,951 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:46:10,150 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:46:10,151 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:46:10,158 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:46:10,161 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:47:37,477 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:47:37,478 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:47:37,481 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:47:37,483 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:53:55,643 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:53:55,645 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:53:55,649 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:53:55,650 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:55:16,441 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:55:16,442 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:55:16,445 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:55:16,448 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:55:29,974 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:55:29,975 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:55:29,981 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:55:29,982 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 11:57:29,683 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:57:29,685 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 11:57:29,689 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 11:57:29,690 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:00:35,652 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:00:35,653 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:00:35,656 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:00:35,659 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:00:49,749 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:00:49,750 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:00:49,753 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:00:49,755 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:03:07,283 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:03:07,285 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:03:07,290 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:03:07,299 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:06:05,608 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:06:05,609 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:06:05,611 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:06:05,612 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:10:08,838 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:10:08,839 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:10:08,845 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:10:08,846 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:11:26,039 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:11:26,041 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:11:26,043 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:11:26,048 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:12:38,597 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:12:38,598 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:12:38,601 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:12:38,603 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:13:05,148 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:13:05,150 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:13:05,152 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:13:05,153 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:15:07,963 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:15:07,964 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:15:07,965 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:15:07,967 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:15:14,495 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:15:14,496 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:15:14,497 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:15:14,498 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:17:48,627 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:17:48,629 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:17:48,630 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:17:48,632 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:19:51,535 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:19:51,537 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:19:51,539 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:19:51,540 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
+2021-03-08 12:20:31,816 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:20:31,818 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\main\resources
+2021-03-08 12:20:31,824 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-03-08 12:20:31,828 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\IIHT\CTS\DTP_2021\MF2Java\JavaSE\EmployeeCRUDDemo2\src\test\resources
