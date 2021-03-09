@@ -1874,9 +1874,7 @@ Collections
                     should come forward and provide the implementations
                     for the specification.
 
-
             DB  <--JDBC--> APP      
-
 
             Oracle        <----> Thin Driver       <---> JDBC  <---> APP
             Ms SQL Server <----> Jet Driver        <---> JDBC  <---> APP
@@ -1970,9 +1968,71 @@ Collections
 
                                 CallabelStatement
 
+           
+           
+           Coupling
+
+                degree of isolation (dependency) among modules
+                loosely coupled projects ensure high maintainability.
+
+           Cohesion 
+
+                degree of similarity of operations grouped in a module.
+
+                DAO         data access                       
+                Service     a method to compute the number of leaves
+
+                Higher the Cohesion higher the maintainability.
+
+            Dependency Injection:
+
+                DI is an approch to IoC pattern
+                IoC - Inversion of control.
+
+                DI enhances the couple to be more loose.
+
+                By Constructor
+                By Setter
+
         Multi-Threading
+
+                Multi-Tasking
+
+                    the ability of an OS
+                    to execute more than one applications simultaniously.
+
+                    1. each task is called a Process
+                    2. Every process will have it own
+                        a) id
+                        b) stack
+                        c) heap
+                        d) registries
+                    3. Use JobScheduling algorithms to share
+                            time slices among multiple processes.
+                    4. inter-process communication is not possible or exepcted.
+
+                Multi-Threading     
+
+                    the ability of an application
+                    to execute one or more operations simultanuosly.
+
+                    1. Each operation is called a Thread
+                    2. Every Thread will have it own
+                        a) threadName
+                        b) stack
+                    3. All Thread will have the same    
+                        a) processId
+                        b) Heap
+                        c) registeries
+                    4. Use thread scheduling for sharing the time slice among the threads.
+                    5. inter-thread communication is expected and is possible.
+                    
+
+
         
         JUnit
+
+        log4j
 
         
 
