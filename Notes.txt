@@ -2027,9 +2027,46 @@ Collections
                     4. Use thread scheduling for sharing the time slice among the threads.
                     5. inter-thread communication is expected and is possible.
                     
+                Thread API
+                ----------------------------
 
+                java.lang.Runnable      void run()
+                            |
+                            |
+                            java.lang.Thread
+                                        Thread()
+                                        Thread(String)
+                                        Thread(Runnable)
 
+                                        static Thread currentThread()
+                                        static void sleep(long) throws InterruptedException
         
+                                        void start();
+                                        void setName(String);
+                                        String getName();
+                                        void setPriority(int);      0 to 10; default 5
+                                        int getPriority();
+                                        void join();
+
+                    Thread Life Cycle
+                    ========================================
+
+                     new Thread()       initiated       
+                                            | start()
+                                            |
+                                            ↓
+                                   Ready (Queued)... ----(Resource Availability) --|
+                                      ↑                                            |
+                                      | (notified)                                 ↓
+                                    Suspend ←(sleep/wait..) ----------- Execution..(run())
+                                                                                   |
+                                                                                   ↓ (complte)
+                                                                                Terminated      
+
+
+
+
+
         JUnit
 
         log4j

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.cts.ed.service.BankAccountService"/>
-<fullyQualifiedTypeName name="com.cts.ed.exception.InvalidDepositeAmount"/>
-<fullyQualifiedTypeName name="com.cts.ed.exception.InvalidWithdrawAmountException"/>
 <fullyQualifiedTypeName name="com.cts.ed.exception.InsufficientBalanceException"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
 <fullyQualifiedTypeName name="java.time.Period"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="com.cts.ecrud.dao.EmployeeDaoFileSystemImpl"/>
 <fullyQualifiedTypeName name="com.cts.ecrud.dao.EmployeeDaoJdbcImpl"/>
 <fullyQualifiedTypeName name="com.cts.ecrud.service.EmployeeServiceImpl"/>
+<fullyQualifiedTypeName name="com.cts.threaddemo.service.SeriesService"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>
