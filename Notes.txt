@@ -2061,13 +2061,34 @@ Collections
                                     Suspend ←(sleep/wait..) ----------- Execution..(run())
                                                                                    |
                                                                                    ↓ (complte)
-                                                                                Terminated      
-
-
-
+                                                                                Terminated                                                                                         
+                                 
+                                 
+                                 Consumer/Producer Problem
+                                 -------------------------------
+                                 
+                                 java.lang.Object
+                                                wait()
+                                                wait(long)           
+                                                notify()
+                                                notifyAll()
 
 
         JUnit
+
+                Testing Platform + Test Runner + Test Engine + Test Api
+
+                for Java [unit] testing.
+
+                Test Api            All that is needed to wrtie automated test cases
+
+                Test Engine         That execute the test cases
+
+                Test Runner         That makes the test cases execute on the test engine
+                                    and generate the test reprots .
+
+                Test Platform       Is just a UI plugin / supprot for the IDE
+                                    in which the test cases are being executed.
 
         log4j
 
