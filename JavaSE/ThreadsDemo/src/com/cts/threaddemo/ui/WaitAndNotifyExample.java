@@ -10,11 +10,14 @@ public class WaitAndNotifyExample {
 
 		NumberStore store = new NumberStore(2);
 		
-		Producer p = new Producer(15, store, "prod");
+		Producer p = new Producer(1,15, store, "prod");
 		Consumer c = new Consumer(15, store, "cons");
 		
-		c.start();
-		p.start();
+		Thread tp = new Thread(p, "prodThrd");
+		Thread tc = new Thread(c, "consThrd");
+		
+		tc.start();
+		tp.start();
 	}
 
 }

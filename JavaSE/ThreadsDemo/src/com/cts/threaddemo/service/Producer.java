@@ -2,25 +2,30 @@ package com.cts.threaddemo.service;
 
 import java.util.Random;
 
-public class Producer extends Thread{
+public class Producer implements Runnable{
 
 	private NumberStore store;
-	private int limit;
+	private String jobName;
+	private int lowerLimit;
+	private int upperLimit;
 	
-	public Producer(int limit,NumberStore store,String name) {
-		super(name);
-		this.limit=limit;
+	public Producer(int lowerLimit,int upperLimit,NumberStore store,String jobName) {
+		this.jobName=jobName;
+		this.lowerLimit=lowerLimit;
+		this.upperLimit=upperLimit;
 		this.store=store;
 	}
 	
 	@Override
 	public void run() {
-		Random  r = new Random();
-		for(int i=1;i<=limit;i++) {
+		Thread t = Thread.currentThread();
+		//Random  r = new Random();
+		for(int i=lowerLimit;i<=upperLimit;i++) {
 			try {
-				store.add(r.nextInt(100));
+				System.out.println(t.getName() + " is doing " + jobName);
+				store.add(i);
 			} catch (InterruptedException e) {
-				interrupt();
+				t.interrupt();
 				System.out.println(e.getMessage());
 			}
 		}

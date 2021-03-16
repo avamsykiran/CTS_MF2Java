@@ -2,25 +2,28 @@ package com.cts.threaddemo.service;
 
 import java.util.Random;
 
-public class Consumer extends Thread{
-
+public class Consumer implements Runnable {
+	
 	private NumberStore store;
 	private int limit;
+	private String jobName;
 	
-	public Consumer(int limit,NumberStore store,String name) {
-		super(name);
+	public Consumer(int limit,NumberStore store,String jobName) {		
 		this.limit=limit;
 		this.store=store;
+		this.jobName=jobName;
 	}
 	
 	@Override
 	public void run() {		
+		Thread t = Thread.currentThread();
 		for(int i=1;i<=limit;i++) {
 			try {
+				System.out.println(t.getName() + " is doing " + jobName);
 				int ele=store.next();
 				System.out.println("Is "+ele+"Prime? " + isPrime(ele));
 			} catch (InterruptedException e) {
-				interrupt();
+				t.interrupt();
 				System.out.println(e.getMessage());
 			}
 		}

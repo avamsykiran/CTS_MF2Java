@@ -2062,8 +2062,7 @@ Collections
                                                                                    |
                                                                                    ↓ (complte)
                                                                                 Terminated                                                                                         
-                                 
-                                 
+                                                                  
                                  Consumer/Producer Problem
                                  -------------------------------
                                  
@@ -2073,6 +2072,17 @@ Collections
                                                 notify()
                                                 notifyAll()
 
+                                ThreadPool
+                                -----------------------------------
+                                
+                                1. Creating ane thread is a costly process.
+                                2. Thread context switching is another costlier process.
+
+                                    Executor Pattern
+
+                                        SingleThreadExecutor
+                                        FixedThreadExecutor ...
+
 
         JUnit
 
@@ -2081,6 +2091,27 @@ Collections
                 for Java [unit] testing.
 
                 Test Api            All that is needed to wrtie automated test cases
+
+
+                            TestCase        is a function that executes a 
+                                            specific senario and varifies for
+                                            an expected output.
+
+                                            @Test   marks a function as a test case
+
+                            TestRun         One execution of one testcase is a test run.
+
+                                            Same testcase executed for 5 time = 5 test runs
+                                            5 testcases executed for 1 time = 5 test runs
+
+                            Test Suite      A collection of test cases 
+                                            is a test suite.
+
+                            Assertion       is a matcher kind of a thing 
+                                            on (expected on actula output)
+                                            that decide wheather a test case is passed or failed.
+
+
 
                 Test Engine         That execute the test cases
 
