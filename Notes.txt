@@ -2111,8 +2111,6 @@ Collections
                                             on (expected on actula output)
                                             that decide wheather a test case is passed or failed.
 
-
-
                 Test Engine         That execute the test cases
 
                 Test Runner         That makes the test cases execute on the test engine
