@@ -1,4 +1,4 @@
-package com.cts.jud.service;
+package com.cts.jud.service.arithmeticoperationstest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,7 +10,9 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class ArithmeticOperationsTest {
+import com.cts.jud.service.ArithmeticOperations;
+
+public class ArithmeticOperationsSumTest {
 
 	ArithmeticOperations ao;
 	
@@ -37,7 +39,7 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test	
-	@DisplayName("sum should return 50 given 10 and 40")
+	@DisplayName("sum should return 50 given 10 and 40")	
 	void sumTest1() {
 		int td1=10;
 		int td2=40;
