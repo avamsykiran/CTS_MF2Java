@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import com.cts.jud.service.ArithmeticOperations;
@@ -40,6 +41,7 @@ public class ArithmeticOperationsSumTest {
 	
 	@Test	
 	@DisplayName("sum should return 50 given 10 and 40")	
+	@Tag("st1")
 	void sumTest1() {
 		int td1=10;
 		int td2=40;
@@ -50,6 +52,7 @@ public class ArithmeticOperationsSumTest {
 	
 	@Test
 	@DisplayName("sum should return 40 given 0 and 40")
+	@Tag("st2")
 	void sumTest2() {
 		int td1=0;
 		int td2=40;
@@ -60,6 +63,7 @@ public class ArithmeticOperationsSumTest {
 
 	@Test
 	@DisplayName("sum should return -50 given -10 and -40")
+	@Tag("st3")
 	void sumTest3() {		
 		int td1=-10;
 		int td2=-40;
@@ -70,7 +74,8 @@ public class ArithmeticOperationsSumTest {
 	
 	@Test
 	@DisplayName("sum should return -10 given 30 and -40")
-	@Disabled
+	//@Disabled
+	@Tag("st4")
 	void sumTest4() {
 		int td1=30;
 		int td2=-40;
