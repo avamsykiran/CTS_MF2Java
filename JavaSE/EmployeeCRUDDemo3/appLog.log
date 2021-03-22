@@ -1,0 +1,4 @@
+22-Mar-2021 12:06:09 INFO [com.cts.ecrud.dao.EmployeeDaoJdbcImpl]- Item are being retrived
+22-Mar-2021 12:06:09 DEBUG [com.cts.ecrud.dao.EmployeeDaoJdbcImpl]- Record is being mapped
+22-Mar-2021 12:06:09 INFO [com.cts.ecrud.dao.EmployeeDaoJdbcImpl]- Item are retrived successfully
+22-Mar-2021 12:07:29 ERROR [com.cts.ecrud.dao.EmployeeDaoJdbcImpl]- java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)

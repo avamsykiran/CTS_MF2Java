@@ -18,6 +18,8 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
+
 import com.cts.ecrud.exception.EmployeeProcessingException;
 import com.cts.ecrud.model.Employee;
 
@@ -36,8 +38,14 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 	final String EXISTS_BY_ID_QRY=
 			"SELECt COUNT(*) FROM emps WHERE empid=?";
 	
+	Logger daoLogger;
+	
+	public EmployeeDaoJdbcImpl() {
+		daoLogger = Logger.getLogger(EmployeeDaoJdbcImpl.class.getName());
+	}
 	
 	private Employee mapRow(ResultSet rs) throws SQLException {
+		daoLogger.debug("Record is being mapped");
 		return new Employee(rs.getInt(1), rs.getString(2), rs.getDouble(3),
 				rs.getDouble(4),rs.getDouble(5), rs.getDouble(6), 
 				rs.getDate(7).toLocalDate(), rs.getBoolean(8));
@@ -51,14 +59,14 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 				Connection con = ConnectionFactory.getConnection();
 				PreparedStatement pst = con.prepareStatement(GET_ALL_QRY);				
 				){
-			
+			daoLogger.info("Item are being retrived");
 			ResultSet rs = pst.executeQuery();
 			while(rs.next()) {
 				emps.add(mapRow(rs));
 			}
-			
+			daoLogger.info("Item are retrived successfully");
 		} catch (SQLException e) {
-			//logg e
+			daoLogger.error(e);
 			throw new EmployeeProcessingException(e.getMessage());
 		}
 		
@@ -73,15 +81,16 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 				PreparedStatement pst = con.prepareStatement(GET_BY_ID_QRY);				
 				){
 			
+			daoLogger.info("An employee with id being retrive");
 			pst.setInt(1, id);
 			
 			ResultSet rs = pst.executeQuery();
 			if(rs.next()) {
 				emp = mapRow(rs);
 			}
-			
+			daoLogger.info("An employee retrived " + emp);
 		} catch (SQLException e) {
-			//logg e
+			daoLogger.error(e);
 			throw new EmployeeProcessingException(e.getMessage());
 		}
 		
@@ -109,7 +118,7 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 				pst.executeUpdate();
 				
 			} catch (SQLException e) {
-				//logg e
+				daoLogger.error(e);
 				throw new EmployeeProcessingException(e.getMessage());
 			}	
 		}
@@ -135,7 +144,7 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 				pst.executeUpdate();
 				
 			} catch (SQLException e) {
-				//logg e
+				daoLogger.error(e);
 				throw new EmployeeProcessingException(e.getMessage());
 			}	
 		}
@@ -153,7 +162,7 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 			pst.executeUpdate();
 			
 		} catch (SQLException e) {
-			//logg e
+			daoLogger.error(e);
 			throw new EmployeeProcessingException(e.getMessage());
 		}	
 	}
@@ -173,7 +182,7 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao{
 			isFound = rs.next() && rs.getInt(1)>0;
 			
 		} catch (SQLException e) {
-			//logg e
+			daoLogger.error(e);
 			throw new EmployeeProcessingException(e.getMessage());
 		}	
 		return isFound;

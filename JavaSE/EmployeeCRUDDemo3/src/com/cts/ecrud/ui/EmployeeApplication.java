@@ -1,9 +1,11 @@
 package com.cts.ecrud.ui;
 
-import java.awt.Choice;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
+
+import org.apache.log4j.Level;
+import org.apache.log4j.PropertyConfigurator;
 
 import com.cts.ecrud.dao.EmployeeDaoFileSystemImpl;
 import com.cts.ecrud.dao.EmployeeDaoJdbcImpl;
@@ -19,6 +21,8 @@ public class EmployeeApplication {
 
 	public static void main(String[] args) {
 
+		PropertyConfigurator.configure("log4j.properties");
+						
 		kbin = new Scanner(System.in);
 
 		MenuOption menu = null;

@@ -2154,6 +2154,57 @@ Collections
 
 
         log4j
+        -----------------------------
+App <-logMsgs-> LOGGER <--logMsgs--> APPENDER (console) 
+                                                        FORMATTER 
+                                                        <--displayed-> Console Screen
+                       <--logMsgs--> APPENDER (file)    FORMATTER 
+                                                        <--store-> a log file
+                       <--logMsgs--> APPENDER (email)   FORMATTER 
+                                                        <--send-> an email
+
+    LogLevel / Severities /Priorities
+
+                OFF
+                FATAL
+                ERROR
+                INFO
+                WARN
+                DEBUG
+                ALL
+
+    Log4j API
+
+        PropertyConfiguarator
+                    //used to read the log4j configuaration properties.
+        
+        Logger
+                static Logger getRootLogger()
+                static Logger getLogger(String loggerCatgeroy)
+
+                void log(String msg,Level level);
+                void fatal(String msg);
+                void error(String msg);
+                void info(String msg);
+                void debug(String msg);
+                void warn(String msg);
+
+            log4j.properties
+            -----------------------------------
+
+            #Root Logger details
+            log4j.rootLogger=ALL, logfile
+
+            #logfile appender details 
+            log4j.appender.logfile=org.apache.log4j.RollingFileAppender
+            log4j.appender.logfile.File=appLog.log
+            log4j.appender.logfile.MaxFileSize=512KB
+            log4j.appender.logfile.MaxBackupIndex=3
+
+            #logfile appender layout details
+            log4j.appender.logfile.layout=org.apache.log4j.PatternLayout
+            log4j.appender.logfile.layout.ConversionPattern=%d{dd-MMM-yyyy HH:mm:ss} %p [%c]- %m%n
+
 
         
 
